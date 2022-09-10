@@ -9,4 +9,8 @@ export class AppController {
   getProfile(@Request() req) {
     return req.user;
   }
+  @Get('version')
+  getVersion(@Request() req) {
+    return '1.0.0';
+  }
 }
