@@ -16,6 +16,7 @@ export class AuthController {
     @UseGuards(LocalAuthGuard)
     @Post('/login')
     async login(@Body() user: UserDto) {
+        console.log('login');
         const res = await this.authService.login(user);
         if (res != null) {
             return res;
