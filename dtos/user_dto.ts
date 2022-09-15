@@ -8,7 +8,7 @@ export class UserDto {
     @ApiProperty(
         { nullable: true }
     )
-    nickname: string;
+    username: string;
     @ApiProperty(
         { nullable: true }
     )

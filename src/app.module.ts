@@ -11,7 +11,7 @@ import { MongooseModule } from '@nestjs/mongoose';
     {
       load: [configuration]
     }
-  ), MongooseModule.forRoot('mongodb://localhost/flashcards'), UsersModule],
+  ), MongooseModule.forRoot('mongodb+srv://dokind:dokind@cluster0.cjlhx.mongodb.net/?retryWrites=true&w=majority'), UsersModule],
   controllers: [AppController],
   providers: [AppService],
 })
